@@ -8,7 +8,7 @@ const Shop = () => {
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState([]);
     useEffect(() =>{
-        console.log('product load before fetch')
+        
         fetch('products.json')
         .then(res=> res.json())
         .then(data=> {
